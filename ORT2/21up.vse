@@ -1,0 +1,112 @@
+! Control Line A: IGoVSoDS File Type Indicator = 003      ! do not edit this or any other line
+[---------------
+[Counters(SysClockCUR, SysClockIDX, SysClock_NumOfClk, *0, Clock_cur, Module_cur, Module_ID_show, Screen_cur, Screen_ID_show, Object_cur, Signal_cur, Line_cur, LineSS_cur, ScrObj_cur, ObjSig_cur, SpMemory_cur, SpSM_cur, T_LabelGP_cur, T_Trigg_cur, T_TriggClk_cur, T_SigGraph_Sig_cur, T_SigGraph_Clock_cur)]
+[---------------
+1|1|0|0|1|1|1|1|1|3|10|11|0|3|16|0|0|0|0|0|0|0
+[---------------
+[T_SysClock(SysClock)]
+[---------------
+1|-1
+[---------------
+[T_Clock(Clock, Naziv, ID_T_SysClock)]
+[---------------
+1|Main Clock|1
+[---------------
+[T_Module(Naziv, ID_T_Module, ID_T_Clock, TreeHW, lblObjectInd, SymbolTitle, OpenMode, ScaleWidth, NonPortConn, locDesc, locNote, locMisc)]
+[---------------
+Main Module|0|1|1|1|Symbol|0|100|
+
+
+
+[---------------
+[T_Screen(Naziv, ID_T_Scr, ID_T_Module, Nivo, Object_broj, Line_broj)]
+[---------------
+Main Module Form|0|1|1|3|0
+[---------------
+[T_Object(Naziv, ID_T_Module, ID_T_TObj, ID_Ti_ObjSig_UL_od, ID_Ti_ObjSig_IZL_od , Stanje_In, Stanje_Out, Stanje_Out_ps, Grupa, Nivo, ExpandConn, Desc, ObjNotSign, USimul)]
+[---------------
+DC2/41|1|117|1|4|111|0001|0001|0|1|0|||True
+NOT3|1|114|8|9|1|0|0|0|1|0|||True
+COUNTER3|1|2116|10|14|1113|XXX|XXX|0|0|2|||True
+[---------------
+[T_Signal(SNaziv, Naziv, OrigSNaziv, Bitova, Stanje, ID_T_Obj_od, ID_T_Conn_od, Grupa, Nivo, TipSignala, PortTip, PortNaziv, *locCloneSig, PartCloneIDs_T_Sig, PartCloneLines, ImplicitClone, NPMConnSpotID, LinkLineIDX, SigNotSign, USimul, InterClock)]
+[---------------
+T0|DC2/4-0||1|0|1|4|0|1|0|0||||||0|0|0|True|0
+T1|DC2/4-1||1|0|1|5|0|1|0|0||||||0|0|0|True|0
+T2|DC2/4-2||1|0|1|6|0|1|0|0||||||0|0|0|True|0
+Undefined|Undefined||1|1|-1|-1|0|0|-5|0||||||0|0|0|True|0
+Undefined|Undefined||1|Z|-1|-1|0|0|-3|0||||||0|0|0|True|0
+Not|Not||1|0|2|2|0|1|0|0||||||0|0|0|True|0
+Undefined|Undefined||1|0|-1|-1|0|0|-5|0||||||0|0|0|True|0
+Undefined|Undefined||1|Z|-1|-1|0|0|-3|0||||||0|0|0|True|0
+Undefined|Undefined||2|Z|-1|-1|0|0|-3|0||||||0|0|0|True|0
+CNT|CNT||2|X|3|7|0|0|0|0||||||0|0|0|True|0
+[---------------
+[T_Line(Tip_od, Tip_do, OLV_od, OLV_do, OLVpoz_od, OLVpoz_do, ID_T_Sig, LabSigNameX, LabSigNameY, LabSigNameTip, Putanja, LabSigNamePoz, ID_T_Scr, ConnBUS)]
+[---------------
+O|V|1|0|4|1|1|0|0|6|5520,2310,1080,,|,,1,|1|0
+O|V|1|0|5|1|2|0|0|6|5520,2490,1080,,,30,|,,1,,-195,6,|1|0
+O|V|1|0|6|1|3|0|0|6|5520,2670,1140,,,45,|,,1,,-180,6,|1|0
+V|O|0|1|1|3|4|0|0|6|5190,1410,,765,|,540,6,|1|0
+L|O|0|2|1|1|5|0|0|6|1080,2550,,-705,1305,,|,,6,460,,6,|1|0
+O|V|3|0|7|1|10|0|0|6|2430,2850,,420,-45,,|,,6,395,,6,|1|0
+O|O|2|3|2|2|6|0|0|6|2655,1845,375,,,600,|,,6,,375,6,|1|0
+V|O|0|1|1|1|8|0|0|6|4275,2445,585,,|-260,,6,|1|0
+V|O|0|3|1|4|9|0|0|6|2430,2160,,285,|,60,6,|1|0
+V|O|0|3|1|1|5|0|0|6|420,2550,1020,,|175,,6,|1|0
+V|O|0|3|1|3|7|0|0|6|3300,2025,,420,|,195,6,|1|0
+[---------------
+[T_LineSS(ID_T_Line, IDX_LabSigState, LabSigTip, LabSigStateX, LabSigStateY, RbrLine)]
+[---------------
+[---------------
+[Ti_ScrObj(ID_T_Scr, ID_T_Obj, Height, Width, Top, Left, Ugao, ImageIDX)]
+[---------------
+1|1|825|660|2175|4860|0|1
+1|2|240|270|1725|2385|0|3
+1|3|405|1965|2445|1440|0|2
+[---------------
+[Ti_ObjSig(ID_T_Obj, ID_T_Conn, ID_T_Signal)]
+[---------------
+1|1|8
+1|2|0
+1|3|4
+1|4|1
+1|5|2
+1|6|3
+1|7|0
+2|1|5
+2|2|6
+3|1|5
+3|2|6
+3|3|7
+3|4|9
+3|5|0
+3|6|0
+3|7|10
+[---------------
+[T_SpMemory(ADRlines, DATAlines, slogID_T_Obj, SimulClockPropagation)]
+[---------------
+[---------------
+[T_SpMemory.SpMemoryConteiner()]
+[---------------
+[---------------
+[T_SpSM(ID_Ti_ScrObj, BrInConn, BrOutConn, NazivTip, PortNaziv, PortSignal, PortZauzet)]
+[---------------
+[---------------
+[T_LabelGP(ID_T_Scr, *fn_RegSettOut(LabFontSize), LabFontIUB, LabGPLeft, LabGPTop, IDXlblGP, Caption)]
+[---------------
+[---------------
+[T_Trigg(EventID, ID_T_Sig, PrevState, EventValue)]
+[---------------
+[---------------
+[T_TriggClk(ID_T_Clock|ID_T_Clock|...|ID_T_Clock)]
+[---------------
+
+[---------------
+[T_SigGraph_SigIDX(ID_T_Sig|ID_T_Sig|...|ID_T_Sig)]
+[---------------
+
+[---------------
+[T_SigGraphClk(ID_T_Clock|ID_T_Clock|...|ID_T_Clock)]
+[---------------
+
